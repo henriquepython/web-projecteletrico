@@ -1,0 +1,41 @@
+html{
+    font-size: 62.5%;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: black;
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    background-image: linear-gradient(to right top, #d1746b, #d7816d, #dc8e70, 
+    #e09b75, #e3a87b, #e0b47c, #dbc080, #d4cc87, #beda94, #a3e7ab,
+     #83f2cb, #5ffbf1);
+}
+.logo{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+}
+.links{
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+.links li{
+    padding: 1rem;
+    border-right: white;
+    list-style: none;
+    padding: 5px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 1px 1px 10px 1px black;
+}
