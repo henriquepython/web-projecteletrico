@@ -1,6 +1,3 @@
-html{
-    font-size: 62.5%;
-}
 *{
     padding: 0;
     margin: 0;
@@ -8,34 +5,107 @@ html{
     color: black;
     text-decoration: none;
 }
+html{
+    font-size: 62.5%;
+}
+
 body{
     height: 100vh;
     background-image: linear-gradient(to right top, #d1746b, #d7816d, #dc8e70, 
     #e09b75, #e3a87b, #e0b47c, #dbc080, #d4cc87, #beda94, #a3e7ab,
      #83f2cb, #5ffbf1);
 }
-.logo{
-    width: 5rem;
-    height: 5rem;
-    border-radius: 1rem;
-}
-.links{
-    font-size: 2rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    display: flex;
-    justify-content: space-between;
-}
-.links li{
-    padding: 1rem;
-    border-right: white;
-    list-style: none;
-    padding: 5px;
-}
-
 .menu{
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 1rem;
-    box-shadow: 1px 1px 10px 1px black;
+    box-shadow: 0.1rem 0.1rem 1rem 0.1rem black;
+}
+.menu__logo{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+}
+.menu__links{
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+.menu__links li{
+    padding: 1rem;
+    border-right: white;
+    list-style: none;
+    padding: 0.5rem;
+}
+.container{
+    display: flex;
+    width: 100vw;
+    height: 70vh;
+    justify-content: space-around;
+}
+.form1{
+    width: 50%;
+    height: 70vh;
+    margin: 3rem;
+    background-color: white;
+    border: thick double black;
+}
+.form1 form input{
+    margin: 2rem
+}
+.resultados{
+
+}
+.contato{
+    background-color: white;
+    width: 40%;
+    height: 80vh;
+    margin: 3rem auto;
+    justify-content: center;
+    border: thick double black;    
+    
+}
+.contato div p{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+.contato .form2{
+    text-align: center;
+    margin: 1rem 15rem;
+    display: flex;
+}
+.contato .form2 input{
+    height: 3rem;
+    width: 18rem;
+    border-radius: .5rem 0rem 0rem .5rem;
+}
+.contato .form2 button{
+    height: 3rem;
+    width: 4.6rem;
+    border-radius: 0rem .5rem .5rem 0rem;
+}
+.contato .apoio{
+    margin: 60% auto;
+    text-align: center;
+    width: 100%;
+    height: 4rem;
+    list-style: none;
+}
+.contato .apoio p{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+.contato .apoio a{
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: 3rem;
+    border: 0.1rem solid black;
+    border-radius: 2rem;
+}
+.contato .apoio a:hover{
+    background-color: red;
+    color: white;
 }
