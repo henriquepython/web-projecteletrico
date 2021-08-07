@@ -1,5 +1,5 @@
 # web-projecteletrico
- De forma a fixar conheciimentos em HTML, CSS E JAVASCRIPT, desenvolvi uma página web para realização de cálculos de projetos eletricos.
+ De forma a fixar conheciimentos em HTML, CSS E JAVASCRIPT, estou desenvolvendo uma página web para realização de cálculos de projetos eletricos.
  
  programa baseado na NBR5410. que facilita no dimensionamento de uma instalação elétrica.
 
