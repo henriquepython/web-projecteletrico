@@ -25,7 +25,19 @@ body {
 }
 .menu {
     grid-area: menu;
-    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20rem;
+    padding-left: 30rem;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+.menu ul li{
+    margin: 0 1rem;
+    font-size: 2rem;
 }
 .container1 {
     grid-area: container1;
@@ -33,15 +45,51 @@ body {
 }
 .contato {
     grid-area: contato;
-    background-color: blueviolet;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: row-reverse;
 }
+.contato__titulo {
+    text-align: center;
+}
+.contato__titulo div h1 {
+    font-size: 2rem;
+}
+.contato__titulo div form input{
+    width: 30rem;
+    height: 3rem;
+    border-radius: .5rem 0rem 0rem .5rem;
+}
+.contato__titulo div form button{
+    width: 6rem;
+    height: 3rem;
+    border-radius: 0rem .5rem .5rem 0rem;
+}
+.contato__titulo div form button:hover {
+    background-color: slateblue;
+}
+.contato .apoio {
+    text-align: center;
+}
+.contato .apoio h1{
+    font-size: 2rem;
+    padding-bottom: .8rem;
+}
+.contato .apoio a{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    border: .1rem solid black;
+    border-radius: .5rem;
+    padding: 0 1rem;
+}
+.contato .apoio a:hover{
+    background-color: slateblue;
+}
 .resultados {
     background-color: brown;}
 .menu__logo {
-    width: 3rem;
-    height: 3rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1.5rem;
 }
