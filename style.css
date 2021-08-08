@@ -1,130 +1,47 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     color: black;
     text-decoration: none;
 }
-html{
+html {
     font-size: 62.5%;
 }
 
-body{
+body {
     height: 100vh;
     background-image: linear-gradient(to right top, #d1746b, #d7816d, #dc8e70, 
     #e09b75, #e3a87b, #e0b47c, #dbc080, #d4cc87, #beda94, #a3e7ab,
      #83f2cb, #5ffbf1);
 }
-.menu{
+.container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas: "menu menu"
+                "container1 resultado"
+                "contato contato"
+}
+.menu {
+    grid-area: menu;
+    background-color: black;
+}
+.container1 {
+    grid-area: container1;
+    background-color: blue;
+}
+.contato {
+    grid-area: contato;
+    background-color: blueviolet;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 1rem;
-    box-shadow: 0.1rem 0.1rem 1rem 0.1rem black;
+    flex-direction: row-reverse;
 }
-.menu__logo{
-    width: 5rem;
-    height: 5rem;
-    border-radius: 1rem;
-}
-.menu__links{
-    font-size: 2rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    display: flex;
-    justify-content: space-between;
-}
-.menu__links li{
-    padding: 1rem;
-    border-right: white;
-    list-style: none;
-    padding: 0.5rem;
-}
-.container{
-    display: flex;
-    width: 100vw;
-    height: 70vh;
-    justify-content: space-around;
-}
-.form1{
-    width: 50%;
-    height: 70vh;
-    margin: 3rem;
-    background-color: white;
-    border: thick double black;
-}
-.form1 h1{
-    font-size: 3rem;
-    text-align: center;
-    
-}
-.contato{
-    background-color: white;
-    width: 40%;
-    height: 80vh;
-    margin: 3rem auto;
-    border: thick double black; 
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr 1fr;
-    
-}
-.contato div h1{
-    text-align: center;
-    margin-bottom: 1rem;
-    font-size: 2rem;
-    border-top: .1rem solid black;
-    padding-top: 3rem;
-    
-}
-.contato .form2{
-    text-align: center;
-    margin-bottom: 4rem;
-
-    
-}
-.contato .form2 input{
+.resultados {
+    background-color: brown;}
+.menu__logo {
+    width: 3rem;
     height: 3rem;
-    width: 18rem;
-    border-radius: .5rem 0rem 0rem .5rem;
-}
-.contato .form2 button{
-    height: 3rem;
-    width: 4.6rem;
-    border-radius: 0rem .5rem .5rem 0rem;
-    cursor: pointer;
-}
-.contato .form2 button:hover{
-   background-color: red;
-}
-.contato .apoio{
-    
-    text-align: center;
-    width: 100%;
-    height: 4rem;
-    list-style: none;
-    margin-bottom: 1rem;
-    
-    
-}
-.contato .apoio h1{
-    font-size: 2rem;
-    margin-bottom: 3rem;
-}
-.contato .apoio a{
-    font-size: 1.5rem;
-    padding: 1rem;
-    margin: 3rem;
-    border: 0.1rem solid black;
-    border-radius: 2rem;
-    
-}
-.contato .apoio a:hover{
-    background-color: red;
-    color: white;
-}
-.contato .resultados{
-    color: black;
-    text-align: center;
-    margin-top: 3rem;
-    font-size: 2rem;
 }
