@@ -8,7 +8,6 @@
 html {
     font-size: 62.5%;
 }
-
 body {
     height: 100vh;
     background-image: linear-gradient(to right top, #d1746b, #d7816d, #dc8e70, 
@@ -32,18 +31,18 @@ body {
     padding-left: 30rem;
     margin-top: 1rem;
 }
-.menu ul{
+.menu ul {
     display: flex;
     list-style: none;
 }
-.menu ul li{
+.menu ul li {
     margin: 0 1rem;
     font-size: 2rem;
 }
-.menu ul li a{
+.menu ul li a {
     transition: 300ms;
 }
-.menu ul li a:hover{
+.menu ul li a:hover {
     color: white;
     text-decoration: underline;
     background-color: slateblue;
@@ -117,7 +116,6 @@ body {
     background-color: slateblue;
     color: white;
 }
-
 aside {
     text-align: center;
     font-size: 2rem;
