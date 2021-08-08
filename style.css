@@ -40,10 +40,31 @@ body {
     margin: 0 1rem;
     font-size: 2rem;
 }
+.menu ul li a{
+    transition: 300ms;
+}
+.menu ul li a:hover{
+    color: white;
+    text-decoration: underline;
+    background-color: slateblue;
+}
 .menu__logo {
     width: 5rem;
     height: 5rem;
     border-radius: 1.5rem;
+}
+.container1 {
+    grid-area: container1;
+    
+}
+.container1 .form1 h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 5rem 6rem;
+    height: 45rem;
+    border: .1rem solid black;
+    border-radius: 1rem;
+    background-color: white;
 }
 .contato {
     grid-area: contato;
@@ -70,6 +91,7 @@ body {
 }
 .contato__titulo div form button:hover {
     background-color: slateblue;
+    color: white;
 }
 .contato .apoio {
     text-align: center;
@@ -77,6 +99,12 @@ body {
 .contato .apoio h1 {
     font-size: 2rem;
     padding-bottom: .8rem;
+    animation: blink 1s steps(5, start) infinite;
+}
+@keyframes blink{
+    to{
+        visibility: hidden;
+    }
 }
 .contato .apoio a {
     font-size: 1.5rem;
@@ -87,20 +115,9 @@ body {
 }
 .contato .apoio a:hover {
     background-color: slateblue;
+    color: white;
 }
-.container1 {
-    grid-area: container1;
-    
-}
-.container1 .form1 h1 {
-    text-align: center;
-    font-size: 2rem;
-    margin: 5rem 6rem;
-    height: 45rem;
-    border: .1rem solid black;
-    border-radius: 1rem;
-    background-color: white;
-}
+
 aside {
     text-align: center;
     font-size: 2rem;
