@@ -1,28 +1,28 @@
 
 //tensão da residência
 
-var tensao = document.getElementById(//id.values)
+var tensao = document.getElementById(tensao.values);
 
 //quarto
-var qquarto = document.getElementById(//id.values)quantidade de quartos
-var areaquarto = document.getElementById(//Informe a Área do quarto.values))
-var perimetroquarto = document.getElementById(//Informe o perímetro do quarto.values)
+var qquarto = document.getElementById(quartos.values);
+var areaquarto = document.getElementById(aquartos.values);
+var perimetroquarto = document.getElementById(pquartos.values);
 
 //sala
-var qsala = document.getElementById(//id.values)quantidade de quartos
-var areasala = document.getElementById(//Informe a Área do quarto.values))
-var perimetrosala = document.getElementById(//Informe o perímetro do quarto.values)
+var qsala = document.getElementById(salas.values);
+var areasala = document.getElementById(asalas.values);
+var perimetrosala = document.getElementById(psalas.values);
 
 //cozinha
-var qcozinha = document.getElementById(//id.values)quantidade de quartos
-var areacozinha = document.getElementById(//Informe a Área do quarto.values))
-var perimetrocozinha = document.getElementById(//Informe o perímetro do quarto.values)
+var qcozinha = document.getElementById(cozinhas.values);
+var areacozinha = document.getElementById(acozinhas.values);
+var perimetrocozinha = document.getElementById(pcozinhas.values);
 
 
 //banheiro
-var qbanheiro = document.getElementById(//id.values)quantidade de quartos
-var areabanheiro = document.getElementById(//Informe a Área do quarto.values))
-var perimetrobanheiro = document.getElementById(//Informe o perímetro do quarto.values)
+var qbanheiro = document.getElementById(banheiros.values);
+var areabanheiro = document.getElementById(abanheiros.values);
+var perimetrobanheiro = document.getElementById(pbanheiros.values);
 
 const tugs = (x) => {
     var tomada = math.trunc(x / 5);
