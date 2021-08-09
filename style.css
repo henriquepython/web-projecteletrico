@@ -76,7 +76,7 @@ body {
 }
 .container1 .form1 form div{
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 30% 30%;
     grid-template-rows: 1fr 1fr 1fr;
     margin: 1rem 1rem;
     padding-left: 5rem;
@@ -85,6 +85,10 @@ body {
 }
 .container1 .form1 form p{
     margin-left: 3rem;
+}
+.container1 .form1 form input{
+    width: 22rem;
+    margin: .1rem auto;
 }
 .contato {
     grid-area: contato;
@@ -145,5 +149,8 @@ aside {
     border: .1rem solid black;
     border-radius: 1rem;
     background-color: white;
+}
+.resultados div p{
+    font-size: 4rem;
 }
 

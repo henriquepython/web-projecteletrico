@@ -58,27 +58,10 @@ var correntesbanheiro = potenciabanheiro / tensao;
 //total
 var pottotal = potenciaquarto + potenciasala + potenciacozinha + potenciabanheiro + potenciaexclusivo;
 
-//Quarto
-   
-
-#Padrão de entrada
-#FINAL
-potenciatotal = (potenciatot1+potenciatot2+potenciatot3+potenciatot4+ptue1)
-correntedeprojeto = potenciatotal / tensao
+//Padrão de entrada
+//FINAL
+var correntedeprojeto = pottotal / tensao;
 
 a = 0
 
-#PARTE WEB DOS MATERIAIS DO PADRÃO DE ENTRADA
-import webbrowser
-while a == 0:
-    padrao = int(input('Informe o tipo do padrão\n1 para monofasico\n2 para bifásico\n3 para trifásico\n'))
-    if padrao == 1:
-        print('materiais para padrão de entrada monofásico:\n')
-        webbrowser.open('http://servicos.coelba.com.br/comercial-industrial/Pages/Padr%C3%A3o%20de%20Entrada/monofasico.aspx')
-        a = int(input('Pode continuar 1 para não 0 para sim\n'))
-    elif padrao == 2:
-        print('materiais para padrão de entrada bifásico:\n')
-        webbrowser.open('http://servicos.coelba.com.br/comercial-industrial/Pages/Padr%C3%A3o%20de%20Entrada/bifasico.aspx')
-        a = int(input('Pode continuar 1 para não 0 para sim\n'))
-
-print('sua potência total: {:.2f}W\n, corrente de projeto : {:.2f}A\nPotência Sala: {:.2f}W\nPotência cozinha: {:.2f}W\nPotencia quartos: {:.2f}W\nPotência Banheiros: {:.2f}W\nPotência circuitos exclusivos{:.2f}W'.format(potenciatotal,correntedeprojeto,potenciatot2,potenciatot3,potenciatot1,potenciatot4,ptue1))
+console.log(`sua potência total: ${pottotal}W\n, corrente de projeto : ${correntedeprojeto}A\nPotência Sala: ${potenciasala}W\nPotência cozinha: ${potenciacozinha}W\nPotencia quartos: ${potenciaquarto}W\nPotência Banheiros: ${potenciabanheiro}W);
