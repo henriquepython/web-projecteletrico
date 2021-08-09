@@ -64,4 +64,4 @@ var correntedeprojeto = pottotal / tensao;
 
 a = 0
 
-console.log(`sua potência total: ${pottotal}W\n, corrente de projeto : ${correntedeprojeto}A\nPotência Sala: ${potenciasala}W\nPotência cozinha: ${potenciacozinha}W\nPotencia quartos: ${potenciaquarto}W\nPotência Banheiros: ${potenciabanheiro}W);
+console.log(`sua potência total: ${pottotal}W\n, corrente de projeto : ${correntedeprojeto}A\nPotência Sala: ${potenciasala}W\nPotência cozinha: ${potenciacozinha}W\nPotencia quartos: ${potenciaquarto}W\nPotência Banheiros: ${potenciabanheiro}W)`;
