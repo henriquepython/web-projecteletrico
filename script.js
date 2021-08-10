@@ -25,10 +25,10 @@ function result(){
     let perimetrobanheiro = document.getElementById("pbanheiros");
 
     const tugs = (x) => {
-        return (x % 5);//virar arrow function
+        return (x / 5);//virar arrow function
     }
     const lumins = (y) => {
-        return (y % 5);//virar arrow function
+        return (y / 4);//virar arrow function
     } 
 
     //final calculos comodos quarto
@@ -59,10 +59,10 @@ function result(){
     //FINAL
     let correntedeprojeto = pottotal / tensao.value;
     let resull = `Sua potência total: ${pottotal.toFixed(2)}W\ncorrente de projeto : ${correntedeprojeto.toFixed(2)}A |
-    \nQuantidades aconselhadas segundo norma NBR5410:
-    \nSala: Tugs: ${tugsala.toFixed(2)}, Luminárias: ${lumisala.toFixed(2)}, Potência: ${potenciasala.toFixed(2)}W, Corrente: ${correntessala.toFixed(2)}|\n
-    Cozinha: Tugs: ${tugcozinha.toFixed(2)}, Luminárias: ${lumicozinha.toFixed(2)}, Potência: ${potenciacozinha.toFixed(2)}W, Corrente: ${correntescozinha.toFixed(2)}\n
-    |Quarto: Tugs: ${tugquarto.toFixed(2)}, Luminárias: ${lumiquarto.toFixed(2)}, Potência: ${potenciaquarto.toFixed(2)}W, Corrente: ${correntesquarto.toFixed(2)}\n
-    |Banheiro: Tugs: ${tugbanheiro.toFixed(2)}, Luminárias: ${lumibanheiro.toFixed(2)}, Potência: ${potenciabanheiro.toFixed(2)}W, Corrente: ${correntesbanheiro.toFixed(2)}`;
+    \nQuantidades aconselhadas segundo norma NBR5410:    \nSala: Tugs: ${tugsala.toFixed(2)}, Luminárias: ${lumisala.toFixed(2)},
+     Potência: ${potenciasala.toFixed(2)}W, Corrente: ${correntessala.toFixed(2)}|\nCozinha: Tugs: ${tugcozinha.toFixed(2)},
+     Luminárias: ${lumicozinha.toFixed(2)}, Potência: ${potenciacozinha.toFixed(2)}W, Corrente: ${correntescozinha.toFixed(2)}\n
+     |Quarto: Tugs: ${tugquarto.toFixed(2)}, Luminárias: ${lumiquarto.toFixed(2)}, Potência: ${potenciaquarto.toFixed(2)}W, 
+     Corrente: ${correntesquarto.toFixed(2)}\n|Banheiro: Tugs: ${tugbanheiro.toFixed(2)}, Luminárias: ${lumibanheiro.toFixed(2)}, Potência: ${potenciabanheiro.toFixed(2)}W, Corrente: ${correntesbanheiro.toFixed(2)}`;
     document.getElementById("resultados1").innerHTML = resull;
 }
