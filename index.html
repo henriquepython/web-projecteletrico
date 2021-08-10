@@ -7,6 +7,7 @@
     <title>Web-project-jh</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -28,7 +29,7 @@
         <main class="container1">
             <div class="form1">
                 <h1>Insira os dados do seu projeto elétrico</h1>
-                <form action="">
+                <form>
                     <p><i class="fas fa-bed"></i> Quartos</p>
                     <div>
                         <p>Quantidade</p>
@@ -71,7 +72,12 @@
         </main>
         <aside class="resultados">
             <div>
+                <p>Tensão</p>
+                <input id="tensao" type="number" placeholder="Informe a tensão nominal">
                 <p>Resultados</p>
+                <button type="button" onclick="result()">Resultados</button>
+            </div>
+            <div id="resultados1">
             </div>
         </aside>
         <footer class="contato">            
@@ -94,5 +100,4 @@
         </footer>
     </section>
 </body>
-<script src="script.js"></script>
 </html>
