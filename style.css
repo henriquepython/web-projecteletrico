@@ -56,7 +56,7 @@ body {
     grid-area: container1;
     
 }
-.container1 .form1{
+.container1 .form1 {
     
     font-size: 2rem;
     margin: 5rem 6rem;
@@ -65,16 +65,16 @@ body {
     border-radius: 1rem;
     background-color: white;
 }
-.container1 .form1 h1{
+.container1 .form1 h1 {
     text-align: center;
     font-size: 2rem;
 }
-.container1 .form1 form{
+.container1 .form1 form {
     padding-left: 4rem;
     padding-top: .5rem;
     font-size: 1.8rem;
 }
-.container1 .form1 form div{
+.container1 .form1 form div {
     display: grid;
     grid-template-columns: 30% 30%;
     grid-template-rows: 1fr 1fr 1fr;
@@ -83,10 +83,10 @@ body {
     border: .1rem solid black;
 
 }
-.container1 .form1 form p{
+.container1 .form1 form p {
     margin-left: 3rem;
 }
-.container1 .form1 form input{
+.container1 .form1 form input {
     width: 22rem;
     margin: .1rem auto;
 }
@@ -125,7 +125,7 @@ body {
     padding-bottom: .8rem;
     animation: blink 1s steps(5, start) infinite;
 }
-@keyframes blink{
+@keyframes blink {
     to{
         visibility: hidden;
     }
@@ -151,15 +151,24 @@ aside {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 30% 60%;
-    grid-gap: 6rem;
+    grid-gap: 3rem;
     background-color: white;
 }
-.resultados div p{
+aside div button{
+    width: 17rem;
+    height: 3rem;
+    border-radius: 2rem;
+    background-color: coral;
+    font-size: 2rem;
+}
+.resultados div p {
     font-size: 4rem;
 }
 #resultados1 {
     font-size: 1.7rem;
     text-align: start;
-    margin: 1rem;
+    margin: .3rem;
     height: 100%;
+    border: .1rem solid black;
+    
 }

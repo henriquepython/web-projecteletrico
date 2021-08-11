@@ -1,103 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web-project-jh</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <script src="script.js"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web-project-jh</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <script src="script.js"></script>
+    </head>
 
-<body>
-    <section class="container">
-        <header class="menu">                 
-            <div>
-                <img class="menu__logo" src="./images/iconej.png" alt="logo">
-            </div>
-            <ul class="menu__links">
-                
-                <li><a target="_blank" href="https://github.com/henriquepython/"><i class="fab fa-github"></i>Github</a></li>
-                
-                <li><a target="_blank" href="mailto:joaohbp59@gmail.com"><i class="fas fa-mail-bulk"></i>Email</a></li>
-                
-                <li><a target="_blank" href="https://wa.me/75981764556"><i class="fab fa-whatsapp"></i>Whatsapp</a></li>
-            </ul>
-        </header>
-        
-        <main class="container1">
-            <div class="form1">
-                <h1>Insira os dados do seu projeto elétrico</h1>
-                <form>
-                    <p><i class="fas fa-bed"></i> Quartos</p>
-                    <div>
-                        <p>Quantidade</p>
-                        <input id="quartos" type="number" placeholder="Usar numeros inteiros. Ex 1,2,3...">
-                        <p>Área</p>
-                        <input id="aquartos" type="number" placeholder="Usar . em vez de , Ex 2.35">
-                        <p>Perímetro</p>
-                        <input id="pquartos" type="number" placeholder="Usar . em vez de , Ex 2.35">
-                    </div>
-                    <p><i class="fas fa-couch"></i> Salas</p>
-                    <div>
-                        <p>Quantidade</p>
-                        <input id="salas" type="number" placeholder="Usar numeros inteiros. Ex 1,2,3...">
-                        <p>Area</p>
-                        <input id="asalas" type="number" placeholder="Usar . em vez de , Ex 2.35">
-                        <p>Perímetro</p>
-                        <input id="psalas" type="number" placeholder="Usar . em vez de , Ex 2.35">
-                    </div>
-                    <p><i class="fas fa-utensils"></i> Cozinhas</p>
-                    <div>
-                        <p>Quantidade</p>
-                        <input id="cozinhas" type="number" placeholder="Usar numeros inteiros. Ex 1,2,3...">
-                        <p>Area</p>
-                        <input id="acozinhas" type="number" placeholder="Usar . em vez de , Ex 2.35">
-                        <p>Perímetro</p>
-                        <input id="pcozinhas" type="number" placeholder="Usar . em vez de , Ex 2.35">
-                    </div>
-                    <p><i class="fas fa-toilet"></i> Banheiros</p>
-                    <div>
-                        <p>Quantidade</p>
-                        <input id="banheiros" type="number" placeholder="Usar numeros inteiros. Ex 1,2,3...">
-                        <p>Área</p>
-                        <input id="abanheiros" type="number" placeholder="Usar . em vez de , Ex 2.35">
-                        <p>Perímetro</p>
-                        <input id="pbanheiros" type="number" placeholder="Usar . em vez de , Ex 2.35">
-                    </div>
-                    
-                </form> 
-            </div>
-        </main>
-        <aside class="resultados">
-            <div>
-                <p>Tensão</p>
-                <input id="tensao" type="number" placeholder="Informe a tensão nominal">
-                <p>Resultados</p>
-                <button type="button" onclick="result()">Resultados</button>
-            </div>
-            <div id="resultados1">
-            </div>
-        </aside>
-        <footer class="contato">            
-            <div class="apoio">
-                <h1>Normas</h1>
-                <a target="_blank" href="https://docente.ifrn.edu.br/jeangaldino/disciplinas/2015.1/instalacoes-eletricas/nbr-5410">NR5410</a>
-                <a target="_blank" href="http://www.guiatrabalhista.com.br/legislacao/nr/nr10.htm">NR10</a>
-            </div>            
-            <div class="contato__titulo">                
+    <body>
+        <section class="container">
+            <header class="menu">                 
                 <div>
-                    <h1>Deixe seu contato!</h1>
+                    <img class="menu__logo" src="./images/iconej.png" alt="logo">
                 </div>
-                <div class="form2">
-                    <form action="">
-                        <input type="text" placeholder="Coloque seu melhor email :)">
-                        <button>Enviar</button>
-                    </form>
+                <ul class="menu__links">                    
+                    <li><a target="_blank" href="https://github.com/henriquepython/"><i class="fab fa-github"></i>Github</a></li>                    
+                    <li><a target="_blank" href="mailto:joaohbp59@gmail.com"><i class="fas fa-mail-bulk"></i>Email</a></li>                    
+                    <li><a target="_blank" href="https://wa.me/75981764556"><i class="fab fa-whatsapp"></i>Whatsapp</a></li>
+                </ul>
+            </header>
+            
+            <main class="container1">
+                <div class="form1">
+                    <h1>Insira os dados do seu projeto elétrico</h1>
+                    <form>
+                        <p><i class="fas fa-bed"></i> Quartos</p>
+                        <div>
+                            <p>Quantidade</p>
+                            <input id="quartos" type="number" placeholder="Usar numeros inteiros. Ex 1,2,3...">
+                            <p>Área</p>
+                            <input id="aquartos" type="number" placeholder="Usar . em vez de , Ex 2.35">
+                            <p>Perímetro</p>
+                            <input id="pquartos" type="number" placeholder="Usar . em vez de , Ex 2.35">
+                        </div>
+                        <p><i class="fas fa-couch"></i> Salas</p>
+                        <div>
+                            <p>Quantidade</p>
+                            <input id="salas" type="number" placeholder="Usar numeros inteiros. Ex 1,2,3...">
+                            <p>Area</p>
+                            <input id="asalas" type="number" placeholder="Usar . em vez de , Ex 2.35">
+                            <p>Perímetro</p>
+                            <input id="psalas" type="number" placeholder="Usar . em vez de , Ex 2.35">
+                        </div>
+                        <p><i class="fas fa-utensils"></i> Cozinhas</p>
+                        <div>
+                            <p>Quantidade</p>
+                            <input id="cozinhas" type="number" placeholder="Usar numeros inteiros. Ex 1,2,3...">
+                            <p>Area</p>
+                            <input id="acozinhas" type="number" placeholder="Usar . em vez de , Ex 2.35">
+                            <p>Perímetro</p>
+                            <input id="pcozinhas" type="number" placeholder="Usar . em vez de , Ex 2.35">
+                        </div>
+                        <p><i class="fas fa-toilet"></i> Banheiros</p>
+                        <div>
+                            <p>Quantidade</p>
+                            <input id="banheiros" type="number" placeholder="Usar numeros inteiros. Ex 1,2,3...">
+                            <p>Área</p>
+                            <input id="abanheiros" type="number" placeholder="Usar . em vez de , Ex 2.35">
+                            <p>Perímetro</p>
+                            <input id="pbanheiros" type="number" placeholder="Usar . em vez de , Ex 2.35">
+                        </div>
+                        
+                    </form> 
                 </div>
-            </div>
-        </footer>
-    </section>
-</body>
+            </main>
+            <aside class="resultados">
+                <div>
+                    <p>Tensão</p>
+                    <input id="tensao" type="number" placeholder="Informe a tensão nominal">
+                    <p>Resultados</p>
+                    <button type="button" onclick="result()">Aperte aqui!</button>
+                </div>
+                <div id="resultados1"></div>
+            </aside>
+            <footer class="contato">            
+                <div class="apoio">
+                    <h1>Normas</h1>
+                    <a target="_blank" href="https://docente.ifrn.edu.br/jeangaldino/disciplinas/2015.1/instalacoes-eletricas/nbr-5410">NR5410</a>
+                    <a target="_blank" href="http://www.guiatrabalhista.com.br/legislacao/nr/nr10.htm">NR10</a>
+                </div>            
+                <div class="contato__titulo">                
+                    <div>
+                        <h1>Deixe seu contato!</h1>
+                    </div>
+                    <div class="form2">
+                        <form action="">
+                            <input type="text" placeholder="Coloque seu melhor email :)">
+                            <button>Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </body>
 </html>

@@ -4,25 +4,25 @@ function result(){
     let tensao = document.getElementById("tensao");
 
     //quarto
-    let qquarto = document.getElementById("quartos");
-    let areaquarto = document.getElementById("aquartos");
-    let perimetroquarto = document.getElementById("pquartos");
+    let qQuarto = document.getElementById("quartos");
+    let areaQuarto = document.getElementById("aquartos");
+    let perimetroQuarto = document.getElementById("pquartos");
 
     //sala
-    let qsala = document.getElementById("salas");
-    let areasala = document.getElementById("asalas");
-    let perimetrosala = document.getElementById("psalas");
+    let qSala = document.getElementById("salas");
+    let areaSala = document.getElementById("asalas");
+    let perimetroSala = document.getElementById("psalas");
 
     //cozinha
-    let qcozinha = document.getElementById("cozinhas");
-    let areacozinha = document.getElementById("acozinhas");
-    let perimetrocozinha = document.getElementById("pcozinhas");
+    let qCozinha = document.getElementById("cozinhas");
+    let areaCozinha = document.getElementById("acozinhas");
+    let perimetroCozinha = document.getElementById("pcozinhas");
 
 
     //banheiro
-    let qbanheiro = document.getElementById("banheiros");
-    let areabanheiro = document.getElementById("abanheiros");
-    let perimetrobanheiro = document.getElementById("pbanheiros");
+    let qBanheiro = document.getElementById("banheiros");
+    let areaBanheiro = document.getElementById("abanheiros");
+    let perimetroBanheiro = document.getElementById("pbanheiros");
 
     const tugs = (x) => {
         return (x / 5);//virar arrow function
@@ -32,37 +32,37 @@ function result(){
     } 
 
     //final calculos comodos quarto
-    let tugquarto = (tugs(perimetroquarto.value))*qquarto.value; //mostrar no layout
-    let lumiquarto = (lumins(areaquarto.value))*qquarto.value; //mostrar no layout
-    let potenciaquarto = ((tugquarto * 100) + (lumiquarto * 60));
-    let correntesquarto = potenciaquarto / tensao.value;
+    let tugQuarto = (tugs(perimetroQuarto.value))*qQuarto.value; //mostrar no layout
+    let lumiQuarto = (lumins(areaQuarto.value))*qQuarto.value; //mostrar no layout
+    let potenciaQuarto = ((tugQuarto * 100) + (lumiQuarto * 60));
+    let correntesQuarto = potenciaQuarto / tensao.value;
     //final calculos comodos sala
-    let tugsala = (tugs(perimetrosala.value))*qsala.value; //mostrar no layout
-    let lumisala = (lumins(areasala.value))*qsala.value; //mostrar no layout
-    let potenciasala = ((tugsala * 100) + (lumisala * 60));
-    let correntessala = potenciasala / tensao.value;
+    let tugSala = (tugs(perimetroSala.value))*qSala.value; //mostrar no layout
+    let lumiSala = (lumins(areaSala.value))*qSala.value; //mostrar no layout
+    let potenciaSala = ((tugSala * 100) + (lumiSala * 60));
+    let correntesSala = potenciaSala / tensao.value;
     //final calculos comodos cozinha
-    let tugcozinha = (tugs(perimetrocozinha.value))*qcozinha.value; //mostrar no layout
-    let lumicozinha = (lumins(areacozinha.value))*qcozinha.value; //mostrar no layout
-    let potenciacozinha = ((tugcozinha * 100) + (lumicozinha * 60));
-    let correntescozinha = potenciacozinha / tensao.value;
+    let tugCozinha = (tugs(perimetroCozinha.value))*qCozinha.value; //mostrar no layout
+    let lumiCozinha = (lumins(areaCozinha.value))*qCozinha.value; //mostrar no layout
+    let potenciaCozinha = ((tugCozinha * 100) + (lumiCozinha * 60));
+    let correntesCozinha = potenciaCozinha / tensao.value;
     //final calculos comodos banheiro
-    let tugbanheiro = (tugs(perimetrobanheiro.value))*qbanheiro.value; //mostrar no layout
-    let lumibanheiro = (lumins(areabanheiro.value))*qbanheiro.value; //mostrar no layout
-    let potenciabanheiro = ((tugbanheiro * 100) + (lumibanheiro * 60));
-    let correntesbanheiro = potenciabanheiro / tensao.value;
+    let tugBanheiro = (tugs(perimetroBanheiro.value))*qBanheiro.value; //mostrar no layout
+    let lumiBanheiro = (lumins(areaBanheiro.value))*qBanheiro.value; //mostrar no layout
+    let potenciaBanheiro = ((tugBanheiro * 100) + (lumiBanheiro * 60));
+    let correntesBanheiro = potenciaBanheiro / tensao.value;
 
     //total
-    let pottotal = potenciaquarto + potenciasala + potenciacozinha + potenciabanheiro;
+    let potTotal = potenciaQuarto + potenciaSala + potenciaCozinha + potenciaBanheiro;
 
     //Padrão de entrada
     //FINAL
-    let correntedeprojeto = pottotal / tensao.value;
-    let resull = `Sua potência total: ${pottotal.toFixed(2)}W\ncorrente de projeto : ${correntedeprojeto.toFixed(2)}A |
-    \nQuantidades aconselhadas segundo norma NBR5410:    \nSala: Tugs: ${tugsala.toFixed(2)}, Luminárias: ${lumisala.toFixed(2)},
-     Potência: ${potenciasala.toFixed(2)}W, Corrente: ${correntessala.toFixed(2)}|\nCozinha: Tugs: ${tugcozinha.toFixed(2)},
-     Luminárias: ${lumicozinha.toFixed(2)}, Potência: ${potenciacozinha.toFixed(2)}W, Corrente: ${correntescozinha.toFixed(2)}\n
-     |Quarto: Tugs: ${tugquarto.toFixed(2)}, Luminárias: ${lumiquarto.toFixed(2)}, Potência: ${potenciaquarto.toFixed(2)}W, 
-     Corrente: ${correntesquarto.toFixed(2)}\n|Banheiro: Tugs: ${tugbanheiro.toFixed(2)}, Luminárias: ${lumibanheiro.toFixed(2)}, Potência: ${potenciabanheiro.toFixed(2)}W, Corrente: ${correntesbanheiro.toFixed(2)}`;
+    let correnteDeProjeto = potTotal / tensao.value;
+    let resull = `Sua potência total: ${potTotal.toFixed(2)}W\ncorrente de projeto : ${correnteDeProjeto.toFixed(2)}A |
+    \nQuantidades aconselhadas segundo norma NBR5410:    \nSala: Tugs: ${tugSala.toFixed(2)}, Luminárias: ${lumiSala.toFixed(2)},
+     Potência: ${potenciaSala.toFixed(2)}W, Corrente: ${correntesSala.toFixed(2)}|\nCozinha: Tugs: ${tugCozinha.toFixed(2)},
+     Luminárias: ${lumiCozinha.toFixed(2)}, Potência: ${potenciaCozinha.toFixed(2)}W, Corrente: ${correntesCozinha.toFixed(2)}\n
+     |Quarto: Tugs: ${tugQuarto.toFixed(2)}, Luminárias: ${lumiQuarto.toFixed(2)}, Potência: ${potenciaQuarto.toFixed(2)}W, 
+     Corrente: ${correntesQuarto.toFixed(2)}\n|Banheiro: Tugs: ${tugBanheiro.toFixed(2)}, Luminárias: ${lumiBanheiro.toFixed(2)}, Potência: ${potenciaBanheiro.toFixed(2)}W, Corrente: ${correntesBanheiro.toFixed(2)}`;
     document.getElementById("resultados1").innerHTML = resull;
 }
